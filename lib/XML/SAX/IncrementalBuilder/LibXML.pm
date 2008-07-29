@@ -74,6 +74,10 @@ XML::SAX::IncrementalBuilder::LibXML - create DOM fragments from SAX events
 
 =head1 DESCRIPTION
 
+This module builds on L<XML::LibXML::SAX::Builder> to build DOM fragments
+from SAX events. Instead of (or in addition to) creating a complete DOM
+tree, it splits up the document into chunks based on the depth they are
+in the tree.
 
 =cut
 
@@ -84,7 +88,7 @@ use warnings;
 use base qw(XML::LibXML::SAX::Builder);
 use Class::InsideOut qw(register);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 METHODS
 

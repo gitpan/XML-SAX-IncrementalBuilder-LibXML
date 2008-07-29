@@ -1,10 +1,6 @@
-use Test::Pod::Coverage tests=>2;
+use Test::Pod::Coverage tests => 1;
 
-pod_coverage_ok( "POE::Filter::SAXBuilder", {
-		coverage_class => 'Pod::Coverage::CountParents',
-	});
-
-pod_coverage_ok( "POE::Filter::SAXBuilder::Builder", {
+pod_coverage_ok( "XML::SAX::IncrementalBuilder::LibXML", {
 		coverage_class => 'Pod::Coverage::CountParents',
 		trustme => [qw(characters start_element end_element start_document xml_decl)]
 	});

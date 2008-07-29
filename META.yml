@@ -18,7 +18,7 @@ no_index:
 provides:
   XML::SAX::IncrementalBuilder::LibXML:
     file: lib/XML/SAX/IncrementalBuilder/LibXML.pm
-    version: 0.01
+    version: 0.02
   XML::SAX::IncrementalBuilder::LibXML::Document:
     file: lib/XML/SAX/IncrementalBuilder/LibXML.pm
   XML::SAX::IncrementalBuilder::LibXML::Element:
@@ -26,4 +26,4 @@ provides:
 requires:
   Class::InsideOut: 0
   XML::LibXML: 1.66
-version: 0.01
+version: 0.02
